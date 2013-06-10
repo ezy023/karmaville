@@ -9,4 +9,5 @@
   <% @users.each do |user| %>
     <%= render 'user_row', :user => user %>
   <% end %>
+  <%= will_paginate %>
 </table>

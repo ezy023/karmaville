@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 gem 'rails', '3.2.12'
 gem 'thin'
+gem 'will_paginate', '~> 3.0'
 
 gem 'bcrypt-ruby'
 
