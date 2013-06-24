@@ -1,14 +1,11 @@
-# Welcome to KarmaVille
+# Karmaville - Dev Bootcamp week 8 challenge
 
-## Getting Started
+### Karmaville is a Rails application focusing on improving database speed.
 
-KarmaVille uses [PostgreSQL](http://www.postgresql.org/).  Run the following commands to get started:
+This is an application we worked on during week 8 of Dev Bootcamp that focused on speeding up actions on the database when working with a large set of information.
 
-```text
-$ git clone git://github.com/Devbootcamp/karmaville.git
-$ cd karmaville
-$ bundle install
-$ rake db:setup
-```
+This was a really exciting challenge because we had the opportunity to work with a large set of data. As with large amounts of information the database took quite a hit in performance. It was awesome learning ways to speed up performance in rails using more advanced querying techniques and setting up counter-cache columns amoung others.
 
-The `rake db:setup` command could take several minutes to run.
+For example, we wanted to pull out users and order them by their karma points. Instead of performing multiple queries to sum up karma points associated with each user we added a counter-cache column to the Users table that would update when new karma points objects were added. This greatly reduced our queries and increased performance for the database, especially across hundreds of thousands of users.
+
+
